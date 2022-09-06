@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Display";
+}
+
+<h1>Display</h1>
+<p>
+    @ViewBag.Name
+</p>
+<p>
+    @ViewBag.Gender
+</p>
+<p>
+    @ViewBag.Option
+</p>
+<div>
+    <ul>
+        @foreach (string item in ViewBag.Hobbies)
+        {
+            <li>
+                @item
+            </li>
+        }
+    </ul>
+</div>
